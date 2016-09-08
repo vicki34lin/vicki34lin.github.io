@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            #text_container {
+                font-family: arial, "Microsoft JhengHei", "微軟正黑體", PMingLiU, "新細明體";
+                text-align: center;
+                font-size: 190px;
+                color: white;
+            }
+            /*img {
+                width: 980px;
+                height: 661px;
+            }
+
+            #activity {
+                height: 1300px;
+                background: #8aba56;
+                padding-top: 150px;
+                background: url(img/Garena_black_board.jpg) no-repeat center fixed;
+                -webkit-background-size: 100% 100%;
+                -moz-background-size: 100% 100%;
+                background-size: 100% 100%;
+                -ms-background-size: 100% 100%;
+                -o-background-size: 100% 100%;
+            }*/
+
+            html{
+                /* This image will be displayed fullscreen */
+                background:url('img/Garena_black_board.jpg') no-repeat center center;
+
+                /* Ensure the html element always takes up the full height of the browser window */
+                min-height:100%;
+
+                /* The Magic */
+                background-size:cover;
+            }
+
+            body{
+                /* Workaround for some mobile browsers */
+                min-height:100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="text_container">
+            <p id="text"></p>
+        </div>
+    </body>
+    
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        var questions = [
+            '你的星座是？',
+            '你的中文和英文全名是？',
+            '你是哪裡人',
+            '你的智慧型手機品牌型號',
+            '你的 LINE 顯示名稱是？',
+            '你現在養了什麼寵物',
+            '你近三個月最常玩哪款遊戲',
+            '你英雄聯盟最擅長的位置',
+            '你的員編百位數是多少',
+            '今年是你在公司的第幾年？',
+            '新人才藝表演你表演了什麼',
+            '你午餐最常跟誰的團',
+            '你最常玩公司哪款遊戲',
+            '你座位左邊的人是誰？',
+            '你座位右邊的人是誰？',
+            '你的競時通顯圖是？',
+            '你上班的交通方式是？'
+        ];
+        var idx = Math.floor((Math.random() * questions.length));
+        $('#text').html(questions[idx]);
+    </script>
+
+</html>
