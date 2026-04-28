@@ -1,0 +1,237 @@
+/* ============================================================
+   VICKI LIN — life/diving.css
+   Page-specific styles for diving.html
+   ============================================================ */
+
+:root {
+  --page-glow-a: var(--sky-soft);
+  --page-glow-b: var(--mint-soft);
+  /* Override goal-strip colors for this page */
+  --goal-strip-a: var(--sky-soft);
+  --goal-strip-b: var(--mint-soft);
+  --goal-strip-border: var(--sky);
+}
+
+/* ── Cert + stats banner ── */
+.cert-banner {
+  background: linear-gradient(135deg, var(--sky-soft) 0%, var(--mint-soft) 100%);
+  border: 1.5px solid var(--sky);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.cert-banner__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cert-banner__text h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.cert-banner__text p {
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+
+.cert-banner__badge { margin-left: auto; }
+
+/* ── Stats chip: sky color override for diving page ── */
+.stat-chip__num { color: var(--sky-dark); }
+
+/* ── Preference cards ── */
+.pref-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+
+.pref-card {
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.pref-card__icon {
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.pref-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.375rem;
+}
+
+.pref-card__body {
+  font-size: 0.88rem;
+  color: var(--text-light);
+  line-height: 1.75;
+  text-align: justify;
+}
+
+/* ── Region sections ── */
+.region-section { margin-bottom: 2.5rem; }
+
+.region-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.region-header h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+/* ── Dive site cards ── */
+.dive-site-card {
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  border-left: 4px solid var(--sky);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 1rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+  margin-bottom: 0.75rem;
+}
+
+.dive-site-card--fav   { border-left-color: var(--mint); }
+.dive-site-card--peach { border-left-color: var(--peach); }
+
+.dive-site-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow);
+}
+
+.dive-site-card__name {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  color: var(--text);
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.dive-site-card__note {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.65;
+}
+
+.dive-site-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.5rem;
+}
+
+.dive-site-card__type {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--sky-dark);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* ── Wish list ── */
+.wishlist-strip {
+  background-color: var(--surface-2, var(--surface));
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 3.5rem;
+}
+
+.wishlist-strip__title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 0.875rem;
+}
+
+.wishlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.wishlist-chip {
+  background-color: var(--surface);
+  border: 1.5px dashed var(--border);
+  border-radius: var(--radius-full);
+  padding: 0.375rem 1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+/* ── Goal strip override (justify-content) ── */
+.goal-strip {
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+/* ── Progress bar ── */
+.dive-progress {
+  flex: 1;
+  min-width: 12rem;
+  max-width: 20rem;
+}
+
+.dive-progress__label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+}
+
+.dive-progress__track {
+  height: 0.5rem;
+  background-color: var(--border);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.dive-progress__fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--sky), var(--mint));
+  transition: width 1s ease;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .cert-banner { flex-direction: column; align-items: flex-start; }
+  .cert-banner__badge { margin-left: 0; }
+  .pref-grid { grid-template-columns: 1fr; }
+  .goal-strip { flex-direction: column; align-items: flex-start; }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2d5a3d"/>
+      <stop offset="100%" stop-color="#52b788"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- 4-pointed sparkle, perfectly centred at (16,16)
+       outer arms: 10.5px  inner notches: 2.4px at 45° -->
+  <path d="M16,5.5 L17.7,14.3 L26.5,16 L17.7,17.7 L16,26.5 L14.3,17.7 L5.5,16 L14.3,14.3 Z"
+        fill="white" fill-opacity="0.95"/>
+</svg>

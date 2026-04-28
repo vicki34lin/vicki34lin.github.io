@@ -1,0 +1,308 @@
+/* ============================================================
+   VICKI LIN — life/bunny.css
+   Page-specific styles for bunny.html
+   ============================================================ */
+
+:root {
+  --page-glow-a: var(--rose-soft);
+  --page-glow-b: var(--peach-soft);
+  /* Chapter timeline: rose edition */
+  --chapter-color: var(--rose);
+  --chapter-soft: var(--rose-soft);
+  --chapter-label-color: var(--rose);
+}
+
+/* ── Yuki profile: photo + stats side by side ── */
+.yuki-profile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.yuki-profile__photo img {
+  width: 15rem;
+  height: 11.25rem;   /* 4:3 橫式 (15 × 3/4) */
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.yuki-profile__intro {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+  text-align: justify;
+}
+
+/* ── Photo placeholder with real image ── */
+.photo-placeholder--filled {
+  padding: 0;
+  border-style: solid;
+}
+
+.photo-placeholder--filled img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+.photo-placeholder--filled span {
+  position: absolute;
+  bottom: 0.4rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  padding: 0.2rem 0.5rem;
+}
+
+/* ── Yuki stats row ── */
+.yuki-stats {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);   /* desktop: 5 in a row */
+  gap: 0;
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* standalone .yuki-stats outside of .yuki-profile gets bottom margin */
+.record-section > .yuki-stats {
+  margin-bottom: 3rem;
+}
+
+.yuki-stat {
+  padding: 1.25rem 1.5rem;
+  border-right: 1px solid var(--border);
+  border-bottom: none;
+  text-align: center;
+}
+
+.yuki-stat:last-child { border-right: none; }
+
+.yuki-stat__label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.yuki-stat__value {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--rose);
+}
+
+/* ── Memory highlight box ── */
+.memory-box {
+  background: linear-gradient(135deg, var(--rose-soft) 0%, var(--peach-soft) 100%);
+  border: 1.5px solid var(--rose);
+  border-radius: var(--radius-lg);
+  padding: 1.875rem 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.memory-box__title {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.memory-box__body {
+  font-size: 0.92rem;
+  color: var(--text-light);
+  line-height: 1.85;
+  text-align: justify;
+}
+
+/* ── Memories grid ── */
+.memories-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Farewell section ── */
+.farewell {
+  text-align: center;
+  padding: 3.5rem 2rem;
+  background: linear-gradient(135deg, var(--rose-soft), var(--peach-soft));
+  border-radius: var(--radius-lg);
+  margin-top: 2rem;
+}
+
+.farewell__heart {
+  display: block;
+  margin: 0 auto 1rem;
+  opacity: 0.6;
+}
+
+.farewell__name {
+  font-family: var(--font-script);
+  font-size: 3rem;
+  color: var(--rose);
+  margin-bottom: 0.5rem;
+}
+
+.farewell__dates {
+  font-size: 0.88rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-bottom: 1.5rem;
+}
+
+.farewell__quote {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  color: var(--text-light);
+  font-style: italic;
+  line-height: 1.8;
+  text-align: justify;
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+/* ── Foster cards ── */
+.foster-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1.25rem;
+}
+
+.foster-card {
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border-top: 4px solid var(--rose);
+}
+
+.foster-card__photo {
+  aspect-ratio: 4 / 3;
+  background-color: var(--surface);
+  border-bottom: 1.5px dashed var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.foster-card__photo svg { opacity: 0.4; }
+
+.foster-card__body {
+  padding: 1.25rem 1.375rem;
+}
+
+.foster-card__name {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.foster-card__dates {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-bottom: 0.75rem;
+}
+
+.foster-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.82rem;
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.foster-card__link:hover { text-decoration: underline; }
+
+/* ── 大久野島 travel card ── */
+.travel-card {
+  background: linear-gradient(135deg, var(--rose-soft) 0%, var(--peach-soft) 100%);
+  border: 1.5px solid var(--rose);
+  border-radius: var(--radius-lg);
+  padding: 1.875rem 2rem;
+}
+
+.travel-card__title {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1.125rem;
+}
+
+.travel-card__body {
+  font-size: 0.93rem;
+  color: var(--text-light);
+  line-height: 1.9;
+  text-align: justify;
+}
+
+.travel-card__body p + p { margin-top: 0.5rem; }
+
+.travel-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem;
+  margin-top: 0.875rem;
+}
+
+/* ── Page accent color applied to titles & eyebrow ── */
+.record-section__title { color: var(--chapter-color); }
+.page-hero__eyebrow    { color: var(--chapter-color); }
+
+/* ── Final chapter: muted styling ── */
+.chapter--final .chapter__dot   { background-color: var(--muted); box-shadow: 0 0 0 2.5px var(--muted); }
+.chapter--final .chapter__label { color: var(--muted); }
+.chapter--final .tag            { background-color: var(--surface-2); color: var(--muted); }
+
+/* ── Responsive ── */
+
+/* tablet (481–768px): 6-col grid
+   row 1 → 3 items × span 2   (each 33.3%)
+   row 2 → 2 items × span 3   (each 50%, evenly split) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .yuki-stats { grid-template-columns: repeat(6, 1fr); }
+  .yuki-stat  { grid-column: span 2; border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .yuki-stat:nth-child(n+4)       { grid-column: span 3; }
+  .yuki-stat:nth-child(3)         { border-right: none; }
+  .yuki-stat:nth-last-child(-n+2) { border-bottom: none; }
+  .yuki-stat:last-child           { border-right: none; }
+  .yuki-profile { grid-template-columns: 1fr; }
+  .yuki-profile__photo img { width: 100%; height: auto; aspect-ratio: 4 / 3; }
+}
+
+/* mobile (≤480px): single column */
+@media (max-width: 480px) {
+  .chapter { grid-template-columns: 4rem 1fr; }
+  .memories-grid { grid-template-columns: 1fr; }
+  .photo-grid { grid-template-columns: 1fr; }
+  .photo-grid--3 { grid-template-columns: 1fr 1fr; }
+  .yuki-stats { grid-template-columns: 1fr; }
+  .yuki-stat { border-right: none; border-bottom: 1px solid var(--border); }
+  .yuki-stat:last-child { border-bottom: none; }
+  .yuki-profile { grid-template-columns: 1fr; }
+  .yuki-profile__photo img { width: 100%; height: auto; aspect-ratio: 4 / 3; }
+}

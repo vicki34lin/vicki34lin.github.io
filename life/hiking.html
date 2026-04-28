@@ -1,0 +1,1670 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vicki Lin 的登山紀錄，台灣百岳、小百岳與海外名峰攻頂記錄。"
+    />
+    <title>登山 · Vicki Lin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+TC:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/life.css" />
+    <link rel="stylesheet" href="../assets/css/hiking.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">Vicki Lin</a>
+        <button
+          class="nav__burger"
+          id="navBurger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+        <ul class="nav__links" id="navLinks" role="list">
+          <li><a href="/" class="nav__link">Home</a></li>
+          <li><a href="/#about" class="nav__link">About</a></li>
+          <li><a href="/#resume" class="nav__link">Resume</a></li>
+          <li><a href="/#portfolio" class="nav__link">Portfolio</a></li>
+          <li><a href="/#life" class="nav__link">Life</a></li>
+          <li><a href="/#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-label="登山">
+      <div class="page-hero__inner">
+        <div class="page-hero__text">
+          <nav class="page-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Vicki Lin</a>
+            <span class="page-breadcrumb__sep">/</span>
+            <a href="/#life">Life</a>
+            <span class="page-breadcrumb__sep">/</span>
+            <span aria-current="page">登山</span>
+          </nav>
+          <span class="page-hero__eyebrow">Hiking Records</span>
+          <h1 class="page-hero__title">登山 · <em>山行紀錄</em></h1>
+          <p class="page-hero__sub">上山前覺得很多事很重要。下山後，它們還在，但感覺不太一樣了。</p>
+        </div>
+        <div class="page-hero__img-wrap" aria-hidden="true">
+          <img
+            src="../assets/images/life-hiking.jpg"
+            alt="Vicki hiking in the mountains of Taiwan"
+            class="page-hero__img"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Life sub-navigation -->
+    <nav class="life-subnav" aria-label="Life 其他頁面">
+      <div class="life-subnav__inner">
+        <a href="/life/snowboarding.html" class="life-subnav__link">滑雪</a>
+        <a href="/life/hiking.html" class="life-subnav__link life-subnav__link--active">登山</a>
+        <a href="/life/diving.html" class="life-subnav__link">潛水</a>
+        <a href="/life/tennis.html" class="life-subnav__link">網球</a>
+        <a href="/life/baking.html" class="life-subnav__link">料理</a>
+        <a href="/life/cocktails.html" class="life-subnav__link">微醺</a>
+        <a href="/life/bunny.html" class="life-subnav__link">兔兔</a>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="section section--surface">
+      <div class="container">
+        <!-- Stats -->
+        <div class="stats-bar reveal">
+          <div class="stat-chip">
+            <span class="stat-chip__num">7</span>
+            <div class="stat-chip__label">/ 100 百岳</div>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-chip__num">28</span>
+            <div class="stat-chip__label">/ 100 小百岳</div>
+          </div>
+          <div class="stat-chip">
+            <span class="stat-chip__num">1</span>
+            <div class="stat-chip__label">海外名峰</div>
+          </div>
+        </div>
+
+        <!-- 一神二玉三富士 -->
+        <div class="challenge-strip reveal">
+          <div class="challenge-strip__text">
+            <h3>一神二玉三<em>富士</em></h3>
+            <p>亞洲三大經典名峰挑戰。玉山、富士山已完成，神山等著被征服</p>
+          </div>
+          <div class="challenge-peaks">
+            <div class="challenge-peak">
+              <span class="challenge-peak__name">玉山</span>
+              <span class="challenge-peak__alt">3,952 m · 台灣</span>
+              <span class="challenge-peak__status status--done"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  width="12"
+                  height="12"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                已完成</span
+              >
+            </div>
+            <div class="challenge-peak">
+              <span class="challenge-peak__name">富士山</span>
+              <span class="challenge-peak__alt">3,776 m · 日本</span>
+              <span class="challenge-peak__status status--done"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  width="12"
+                  height="12"
+                >
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                已完成</span
+              >
+            </div>
+            <div class="challenge-peak">
+              <span class="challenge-peak__name">神山</span>
+              <span class="challenge-peak__alt">4,095 m · 馬來西亞</span>
+              <span class="challenge-peak__status status--next">計畫中</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ─── 台灣百岳 ─── -->
+        <div class="record-section reveal">
+          <div class="record-section__header">
+            <h2 class="record-section__title">台灣百岳</h2>
+            <span class="record-badge record-badge--mint">7 / 100 完成</span>
+            <span class="record-section__sub">目標：全 A 級 + 知名 B 級</span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>山名</th>
+                  <th>分級</th>
+                  <th>海拔（公尺）</th>
+                  <th>縣市</th>
+                  <th>國家公園</th>
+                  <th>首次登頂</th>
+                  <th>二次登頂</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-muted">1</td>
+                  <td class="td-name">玉山</td>
+                  <td><span class="grade-badge grade-badge--A">A</span></td>
+                  <td>3,952</td>
+                  <td>南投縣、高雄市、嘉義縣</td>
+                  <td class="td-muted">玉山國家公園</td>
+                  <td class="td-date">2018/06/30</td>
+                  <td class="td-date">2023/04/03</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">17</td>
+                  <td class="td-name">向陽山</td>
+                  <td><span class="grade-badge grade-badge--A">A</span></td>
+                  <td>3,603</td>
+                  <td>高雄市、台東縣</td>
+                  <td class="td-muted">玉山國家公園</td>
+                  <td class="td-date">2020/10/13</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">25</td>
+                  <td class="td-name">玉山西峰</td>
+                  <td><span class="grade-badge grade-badge--A">A</span></td>
+                  <td>3,518</td>
+                  <td>嘉義縣</td>
+                  <td class="td-muted">玉山國家公園</td>
+                  <td class="td-date">2024/03/02</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">27</td>
+                  <td class="td-name">三叉山</td>
+                  <td><span class="grade-badge grade-badge--A">A</span></td>
+                  <td>3,496</td>
+                  <td>花蓮縣、台東縣、高雄市</td>
+                  <td class="td-muted">玉山國家公園</td>
+                  <td class="td-date">2020/10/12</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">35</td>
+                  <td class="td-name">合歡山東峰</td>
+                  <td><span class="grade-badge grade-badge--A">A</span></td>
+                  <td>3,421</td>
+                  <td>南投縣、花蓮縣</td>
+                  <td class="td-muted">太魯閣國家公園</td>
+                  <td class="td-date">2023/10/09</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">37</td>
+                  <td class="td-name">合歡山</td>
+                  <td><span class="grade-badge grade-badge--A">A</span></td>
+                  <td>3,417</td>
+                  <td>南投縣</td>
+                  <td class="td-muted">太魯閣國家公園</td>
+                  <td class="td-date">2023/10/08</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">70</td>
+                  <td class="td-name">石門山</td>
+                  <td><span class="grade-badge grade-badge--A">A</span></td>
+                  <td>3,237</td>
+                  <td>花蓮縣、南投縣</td>
+                  <td class="td-muted">太魯閣國家公園</td>
+                  <td class="td-date">2023/10/09</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 百岳目標清單 -->
+        <div class="record-section reveal">
+          <div class="record-section__header">
+            <h2 class="record-section__title">百岳目標清單</h2>
+            <span class="record-badge record-badge--peach">接下來的山</span>
+          </div>
+          <div class="upcoming-grid">
+            <div class="upcoming-chip">雪山</div>
+            <div class="upcoming-chip">玉山北峰</div>
+            <div class="upcoming-chip">南湖大山</div>
+            <div class="upcoming-chip">奇萊北峰</div>
+            <div class="upcoming-chip">奇萊主山</div>
+            <div class="upcoming-chip">大霸尖山</div>
+            <div class="upcoming-chip">北合歡山</div>
+            <div class="upcoming-chip">小霸尖山</div>
+            <div class="upcoming-chip">奇萊南峰</div>
+            <div class="upcoming-chip">鈴鳴山</div>
+            <div class="upcoming-chip">郡大山</div>
+            <div class="upcoming-chip">玉山前峰</div>
+            <div class="upcoming-chip">塔關山</div>
+            <div class="upcoming-chip">雪山東峰</div>
+            <div class="upcoming-chip">南華山</div>
+            <div class="upcoming-chip">關山嶺山</div>
+            <div class="upcoming-chip">閂山</div>
+            <div class="upcoming-chip">西合歡</div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- ─── 台灣小百岳 ─── -->
+        <div class="record-section reveal">
+          <div class="record-section__header">
+            <h2 class="record-section__title">台灣小百岳</h2>
+            <span class="record-badge record-badge--sky">28 / 100 完成</span>
+            <span class="record-section__sub">目標：100 / 100</span>
+          </div>
+
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>山名</th>
+                  <th>海拔（公尺）</th>
+                  <th>縣市</th>
+                  <th>首次登頂</th>
+                  <th>二次登頂</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="td-muted">1</td>
+                  <td class="td-name">大屯山</td>
+                  <td>1,092</td>
+                  <td>台北市、新北市</td>
+                  <td class="td-date">2021/04/05</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">2</td>
+                  <td class="td-name">七星山</td>
+                  <td>1,120</td>
+                  <td>台北市</td>
+                  <td class="td-date">2019/10/12</td>
+                  <td class="td-date">2020/06/13</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">3</td>
+                  <td class="td-name">大武崙山</td>
+                  <td>231</td>
+                  <td>基隆市</td>
+                  <td class="td-date">2026/01/03</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">4</td>
+                  <td class="td-name">楨子寮山</td>
+                  <td>163</td>
+                  <td>基隆市</td>
+                  <td class="td-date">2026/01/03</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">6</td>
+                  <td class="td-name">基隆山</td>
+                  <td>588</td>
+                  <td>新北市</td>
+                  <td class="td-date">2026/04/19</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">7</td>
+                  <td class="td-name">紅淡山</td>
+                  <td>210</td>
+                  <td>基隆市</td>
+                  <td class="td-date">2026/03/22</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">8</td>
+                  <td class="td-name">大崙頭山</td>
+                  <td>478</td>
+                  <td>台北市</td>
+                  <td class="td-date">2023/02/28</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">9</td>
+                  <td class="td-name">劍潭山</td>
+                  <td>153</td>
+                  <td>台北市</td>
+                  <td class="td-date">2022/02/26</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">10</td>
+                  <td class="td-name">五分山</td>
+                  <td>757</td>
+                  <td>新北市</td>
+                  <td class="td-date">2026/04/19</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">11</td>
+                  <td class="td-name">姜子寮山</td>
+                  <td>729</td>
+                  <td>基隆市</td>
+                  <td class="td-date">2026/04/05</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-xizhi">
+                  <td class="td-muted">12</td>
+                  <td class="td-name">汐止大尖山</td>
+                  <td>460</td>
+                  <td>新北市</td>
+                  <td class="td-date">2024/08/24</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">13</td>
+                  <td class="td-name">南港山</td>
+                  <td>375</td>
+                  <td>台北市</td>
+                  <td class="td-date">2021/02/16</td>
+                  <td class="td-date">2023/03/11</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-tuku">
+                  <td class="td-muted">14</td>
+                  <td class="td-name">土庫岳</td>
+                  <td>389</td>
+                  <td>新北市</td>
+                  <td class="td-date">2024/04/28</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-datong">
+                  <td class="td-muted">15</td>
+                  <td class="td-name">大棟山</td>
+                  <td>405</td>
+                  <td>新北市、桃園市</td>
+                  <td class="td-date">2024/06/22</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-nanshe">
+                  <td class="td-muted">16</td>
+                  <td class="td-name">南勢角山</td>
+                  <td>302</td>
+                  <td>新北市</td>
+                  <td class="td-date">2024/06/15</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">17</td>
+                  <td class="td-name">二格山</td>
+                  <td>678</td>
+                  <td>台北市、新北市</td>
+                  <td class="td-date">2022/06/04</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">18</td>
+                  <td class="td-name">天上山</td>
+                  <td>429</td>
+                  <td>新北市</td>
+                  <td class="td-date">2023/01/08</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-yuan">
+                  <td class="td-muted">19</td>
+                  <td class="td-name">福德坑山</td>
+                  <td>321</td>
+                  <td>新北市</td>
+                  <td class="td-date">2024/10/19</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-dongyan">
+                  <td class="td-muted">22</td>
+                  <td class="td-name">東眼山</td>
+                  <td>1,212</td>
+                  <td>新北市、桃園市</td>
+                  <td class="td-date">2024/05/01</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">23</td>
+                  <td class="td-name">溪洲山</td>
+                  <td>577</td>
+                  <td>桃園市</td>
+                  <td class="td-date">2025/09/13</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-shiba">
+                  <td class="td-muted">26</td>
+                  <td class="td-name">十八尖山</td>
+                  <td>132</td>
+                  <td>新竹市</td>
+                  <td class="td-date">2024/06/22</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">32</td>
+                  <td class="td-name">向天湖山</td>
+                  <td>1,225</td>
+                  <td>苗栗縣</td>
+                  <td class="td-date">2023/01/27</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">35</td>
+                  <td class="td-name">火炎山</td>
+                  <td>596</td>
+                  <td>苗栗縣</td>
+                  <td class="td-date">2021/10/16</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">41</td>
+                  <td class="td-name">頭科山</td>
+                  <td>859</td>
+                  <td>台中市</td>
+                  <td class="td-date">2022/04/04</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-data">
+                  <td class="td-muted">59</td>
+                  <td class="td-name">大塔山</td>
+                  <td>2,663</td>
+                  <td>嘉義縣、南投縣</td>
+                  <td class="td-date">2024/09/21</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr class="has-journal" data-journal="journal-hongmao">
+                  <td class="td-muted">62</td>
+                  <td class="td-name">紅毛埤山</td>
+                  <td>150</td>
+                  <td>嘉義市</td>
+                  <td class="td-date">2024/07/21</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">77</td>
+                  <td class="td-name">壽山</td>
+                  <td>356</td>
+                  <td>高雄市</td>
+                  <td class="td-date">2022/10/09</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+                <tr>
+                  <td class="td-muted">83</td>
+                  <td class="td-name">三角崙山</td>
+                  <td>1,029</td>
+                  <td>新北市</td>
+                  <td class="td-date">2021/03/13</td>
+                  <td class="td-date td-muted">&ndash;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- ─── 登山日誌 ─── -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">登山日誌</h2>
+            <span class="record-badge record-badge--mint">記下來的那些山</span>
+          </div>
+
+          <!-- #014 土庫岳 -->
+          <div id="journal-tuku" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #014</div>
+                <div class="journal-card__title">土庫岳 · 389 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 04 / 28</span>
+            </div>
+            <div class="journal-card__stats">
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <rect x="1" y="8" width="22" height="8" rx="1" />
+                    <line x1="6" y1="8" x2="6" y2="12" />
+                    <line x1="10" y1="8" x2="10" y2="11" />
+                    <line x1="14" y1="8" x2="14" y2="12" />
+                    <line x1="18" y1="8" x2="18" y2="11" /></svg
+                ></span>
+                全程約 4.5 km</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <line x1="12" y1="19" x2="12" y2="5" />
+                    <polyline points="5 12 12 5 19 12" /></svg
+                ></span>
+                爬升約 340 m</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" /></svg
+                ></span>
+                約 3 小時（含山頂躲雨半小時）</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <polyline points="23 4 23 10 17 10" />
+                    <polyline points="1 20 1 14 7 14" />
+                    <path
+                      d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                    /></svg
+                ></span>
+                O 型路線</span
+              >
+            </div>
+            <div class="journal-card__body">
+              <p>
+                搭乘市區公車就可以到達登山口，同時是雙北的五個一等三角點之一，正是說走就走的最理想目標！
+              </p>
+              <p>
+                從舊莊街二段 122
+                巷出發上山，沿著更寮古道經椿萱農場直達山頂，後段接栳寮古道，非常濕滑的石階路線，最後從舊莊街二段
+                232 巷返回，完成 O 型路線。
+              </p>
+              <p>三角點旁設有涼亭，視野開闊，但樹叢過高，矮小的人類無法體驗到良好的展望</p>
+              <p>路上遇到一位大哥帶著 26 隻狗，身上看似都綁有天線以防走失，好驚人！</p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #022 東眼山 -->
+          <div id="journal-dongyan" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #022</div>
+                <div class="journal-card__title">東眼山 · 1,212 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 05 / 01</span>
+            </div>
+            <div class="journal-card__stats">
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <rect x="1" y="8" width="22" height="8" rx="1" />
+                    <line x1="6" y1="8" x2="6" y2="12" />
+                    <line x1="10" y1="8" x2="10" y2="11" />
+                    <line x1="14" y1="8" x2="14" y2="12" />
+                    <line x1="18" y1="8" x2="18" y2="11" /></svg
+                ></span>
+                全程約 3.5 km</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <line x1="12" y1="19" x2="12" y2="5" />
+                    <polyline points="5 12 12 5 19 12" /></svg
+                ></span>
+                總爬升約 320 m</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" /></svg
+                ></span>
+                約 2 小時</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <polyline points="23 4 23 10 17 10" />
+                    <polyline points="1 20 1 14 7 14" />
+                    <path
+                      d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                    /></svg
+                ></span>
+                順時針自導式步道一圈</span
+              >
+            </div>
+            <div class="journal-card__body">
+              <p>
+                東眼山是國家森林遊樂區，人車入園都要收費，有遊客服務中心及餐廳可以充分整裝和補充能量。
+              </p>
+              <p>
+                步道基本上都是完整規劃過的人造石階和有防滑條的木階梯，維護良好，坡度緩上，非常平易近人！
+              </p>
+              <p>小可惜的是因地震影響，山頂的瞭望台在維修，無法眺望欣賞台北桃園美景。</p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #016 南勢角山 -->
+          <div id="journal-nanshe" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #016</div>
+                <div class="journal-card__title">南勢角山 · 302 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 06 / 15</span>
+            </div>
+            <div class="journal-card__stats">
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <rect x="1" y="8" width="22" height="8" rx="1" />
+                    <line x1="6" y1="8" x2="6" y2="12" />
+                    <line x1="10" y1="8" x2="10" y2="11" />
+                    <line x1="14" y1="8" x2="14" y2="12" />
+                    <line x1="18" y1="8" x2="18" y2="11" /></svg
+                ></span>
+                單程約 0.9 km（財神殿起訖）</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <line x1="12" y1="19" x2="12" y2="5" />
+                    <polyline points="5 12 12 5 19 12" /></svg
+                ></span>
+                總爬升約 140 m</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <polyline points="23 4 23 10 17 10" />
+                    <polyline points="1 20 1 14 7 14" />
+                    <path
+                      d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                    /></svg
+                ></span>
+                原路返回</span
+              >
+            </div>
+            <div class="journal-card__body">
+              <p>
+                下公車後被 Google Maps 導去走了竟南宮石階步道，一路陡上到財神殿，再接 452
+                階到福德宮主殿，從主殿後方登山口進入天上山系登山步道。
+              </p>
+              <p>
+                下山時抓準時間從財神殿旁的第一停車場搭上了 F512 副線回到捷運南勢角站，才發現原來 F
+                是免費公車～
+              </p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #026 十八尖山 -->
+          <div id="journal-shiba" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #026</div>
+                <div class="journal-card__title">十八尖山 · 132 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 06 / 22</span>
+            </div>
+            <div class="journal-card__body">
+              <p>
+                公園等級的小百岳！開車到博愛街 5
+                巷登山口，有很大的停車場不怕沒位置，也有乾淨的廁所和飲水機，維護非常良好。
+              </p>
+              <p>據說竹中學生體育課要來這裡跑山。</p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #015 大棟山 -->
+          <div id="journal-datong" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #015</div>
+                <div class="journal-card__title">大棟山 · 405 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 06 / 22</span>
+            </div>
+            <div class="journal-card__body">
+              <p>
+                開車就能到的小百岳！南樹林火車站後方的東和街一路上山約 4
+                公里，部分路段很窄無法會車，必須隨時注意對向來車，車程約十幾分鐘可抵達三角點。
+              </p>
+              <p>三角點幾乎在新北和桃園的邊界，是雙北五個一等三角點之一，展望極佳！</p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #062 紅毛埤山 -->
+          <div id="journal-hongmao" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #062</div>
+                <div class="journal-card__title">紅毛埤山 · 150 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 07 / 21</span>
+            </div>
+            <div class="journal-card__body">
+              <p>嘉義市第一高峰，但沒有展望也沒有任何難度，車停大雅路上步行十分鐘內可抵達。</p>
+              <p>路過嘉義順手撿一下（？）</p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #012 汐止大尖山 -->
+          <div id="journal-xizhi" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #012</div>
+                <div class="journal-card__title">汐止大尖山 · 460 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 08 / 24</span>
+            </div>
+            <div class="journal-card__stats">
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <rect x="1" y="8" width="22" height="8" rx="1" />
+                    <line x1="6" y1="8" x2="6" y2="12" />
+                    <line x1="10" y1="8" x2="10" y2="11" />
+                    <line x1="14" y1="8" x2="14" y2="12" />
+                    <line x1="18" y1="8" x2="18" y2="11" /></svg
+                ></span>
+                全程約 0.7 km</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <line x1="12" y1="19" x2="12" y2="5" />
+                    <polyline points="5 12 12 5 19 12" /></svg
+                ></span>
+                總爬升約 120 m</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" /></svg
+                ></span>
+                約 30 分鐘（含拍照）</span
+              >
+            </div>
+            <div class="journal-card__body">
+              <p>車停勤進路秀峰瀑布附近起登，一路石階緩升，多有青苔需注意防滑。</p>
+              <p>
+                山頂展望良好，設有涼亭，還掛有國旗，可俯瞰汐止、南港，亦可遠眺陽明山、基隆山，令人心曠神怡！
+              </p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>山頂展望</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>照片待補</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 五寮尖 -->
+          <div id="journal-wulaojian" class="journal-card journal-card--special reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">北部三大岩場之首</div>
+                <div class="journal-card__title">五寮尖</div>
+              </div>
+              <span class="journal-card__date">2024 / 09 / 01</span>
+            </div>
+            <div class="journal-card__stats">
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <rect x="1" y="8" width="22" height="8" rx="1" />
+                    <line x1="6" y1="8" x2="6" y2="12" />
+                    <line x1="10" y1="8" x2="10" y2="11" />
+                    <line x1="14" y1="8" x2="14" y2="12" />
+                    <line x1="18" y1="8" x2="18" y2="11" /></svg
+                ></span>
+                全程約 5.5 km</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" /></svg
+                ></span>
+                約 6 小時</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <polyline points="23 4 23 10 17 10" />
+                    <polyline points="1 20 1 14 7 14" />
+                    <path
+                      d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                    /></svg
+                ></span>
+                小 O 型</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <path d="M3 17l3.5-7 3.5 3.5L14 7l4 10H3z" /></svg
+                ></span>
+                全程需手腳並用拉繩攀爬</span
+              >
+            </div>
+            <div class="journal-card__body">
+              <p>
+                從玉里商店起登，停車位稀少只能在路邊找適合的地方停。出發約 2
+                小時可達稜線路段，也就是著名的打卡點牛背岩，接著經峭壁雄峰與獨立峰一路攻頂，折返後從七號牌走後山路下山。
+              </p>
+              <p>
+                近全程需手腳並用拉繩攀爬，其中以四號牌到六號牌的峭壁雄峰最刺激，高度約三十公尺近垂直向下，但沒有到危險會力竭的程度，趣味性高！
+              </p>
+              <p>下山沿途有一休息站賣冰涼飲料，最後經過煤礦礦坑遺址就差不多抵達終點。</p>
+            </div>
+            <div class="photo-grid photo-grid--3">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>牛背岩</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>峭壁雄峰</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>礦坑遺址</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #059 大塔山 -->
+          <div id="journal-data" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #059</div>
+                <div class="journal-card__title">大塔山 · 2,663 m · 小百岳最高峰</div>
+              </div>
+              <span class="journal-card__date">2024 / 09 / 21</span>
+            </div>
+            <div class="journal-card__stats">
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <rect x="1" y="8" width="22" height="8" rx="1" />
+                    <line x1="6" y1="8" x2="6" y2="12" />
+                    <line x1="10" y1="8" x2="10" y2="11" />
+                    <line x1="14" y1="8" x2="14" y2="12" />
+                    <line x1="18" y1="8" x2="18" y2="11" /></svg
+                ></span>
+                單程約 3.5 km</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <line x1="12" y1="19" x2="12" y2="5" />
+                    <polyline points="5 12 12 5 19 12" /></svg
+                ></span>
+                爬升約 500 m</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" /></svg
+                ></span>
+                約 3 小時（單程）</span
+              >
+            </div>
+            <div class="journal-card__body">
+              <p>阿里山群峰塔山山系的最高峰，同時也是小百岳之最！</p>
+              <p>
+                前段與阿里山鐵道併行，枕木步道平緩好走，漫步在檜木林中享受森林浴；後段較為陡升，終點為塔山觀景平台，可遠眺玉山群峰。
+              </p>
+              <p>可惜當天天氣不佳，一片白牆。</p>
+            </div>
+            <div class="photo-grid">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>檜木林步道</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>塔山觀景平台</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- #019 福德坑山 -->
+          <div id="journal-yuan" class="journal-card reveal">
+            <div class="journal-card__header">
+              <div>
+                <div class="journal-card__num">小百岳 #019 </div>
+                <div class="journal-card__title">福德坑山（鳶山） · 321 m</div>
+              </div>
+              <span class="journal-card__date">2024 / 10 / 19</span>
+            </div>
+            <div class="journal-card__stats">
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <rect x="1" y="8" width="22" height="8" rx="1" />
+                    <line x1="6" y1="8" x2="6" y2="12" />
+                    <line x1="10" y1="8" x2="10" y2="11" />
+                    <line x1="14" y1="8" x2="14" y2="12" />
+                    <line x1="18" y1="8" x2="18" y2="11" /></svg
+                ></span>
+                三角點單程約 1.6 km</span
+              >
+              <span class="journal-stat"
+                ><span class="journal-stat__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="14"
+                    height="14"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <polyline points="12 6 12 12 16 14" /></svg
+                ></span>
+                全程含拍照約 3 小時</span
+              >
+            </div>
+            <div class="journal-card__body">
+              <p>
+                開車從三峽老街附近的登山口到光復紀念鐘，停車位只有六個，很幸運上午十點還有位置。
+              </p>
+              <p>
+                起登約五分鐘處有個鳶山岩，是個展望非常好的打卡點，天氣晴朗時可俯瞰整個大台北地區。
+              </p>
+              <p>小百岳三角點實為福德坑山，單程約 40 分鐘可抵達，再繼續走約 0.6 公里可抵達彩壁。</p>
+              <p>彩壁有一說是地衣形成，地衣是由菌與綠藻共生的共生體，因此形成特殊的色彩。</p>
+              <p>下山後還可逛逛三峽老街，非常適合週末臨時起意透透氣的行程！</p>
+            </div>
+            <div class="photo-grid photo-grid--3">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>鳶山岩展望</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>彩壁</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>三峽老街</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /登山日誌 -->
+
+        <div class="section-divider"></div>
+
+        <!-- ─── 海外名峰 ─── -->
+        <div class="record-section reveal">
+          <div class="record-section__header">
+            <h2 class="record-section__title">海外名峰</h2>
+            <span class="record-badge record-badge--butter">1 已完成 · 1 計畫中</span>
+          </div>
+
+          <!-- 富士山 card with photos -->
+          <div class="overseas-card overseas-card--expanded">
+            <div class="overseas-card__top">
+              <span class="overseas-card__flag">🇯🇵</span>
+              <div class="overseas-card__info">
+                <h3>富士山 · Fuji</h3>
+                <p>3,776 m · 靜岡縣 / 山梨縣，走過吉田與富士宮兩條路線</p>
+              </div>
+              <div>
+                <span class="record-badge record-badge--mint"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    width="12"
+                    height="12"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  成功登頂</span
+                >
+              </div>
+            </div>
+            <div class="photo-grid photo-grid--mt-lg">
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>吉田口登山道</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>富士山頂</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>富士宮口</span>
+              </div>
+              <div class="photo-placeholder">
+                <span class="photo-placeholder__icon"
+                  ><svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    width="24"
+                    height="24"
+                  >
+                    <path
+                      d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                    />
+                    <circle cx="12" cy="13" r="3" /></svg
+                ></span>
+                <span>日出雲海</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="overseas-card overseas-card--upcoming">
+            <div class="overseas-card__top">
+              <span class="overseas-card__flag">🇲🇾</span>
+              <div class="overseas-card__info">
+                <h3>神山 · Kinabalu</h3>
+                <p>4,095 m · 沙巴，馬來西亞，東南亞最高峰，計畫中</p>
+              </div>
+              <div>
+                <span class="record-badge record-badge--peach">計畫中</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-block reveal">
+          <p>登山不是逃跑，是去找回一個比較清醒的自己。</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p class="footer__quote">keep going, one summit at a time.</p>
+        <p class="footer__copy">© Vicki Lin · <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+    <script>
+      document.querySelectorAll("tr.has-journal").forEach(function (tr) {
+        tr.setAttribute("tabindex", "0");
+        function go() {
+          var id = tr.getAttribute("data-journal");
+          var target = document.getElementById(id);
+          if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        tr.addEventListener("click", go);
+        tr.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") go();
+        });
+      });
+    </script>
+  </body>
+</html>
