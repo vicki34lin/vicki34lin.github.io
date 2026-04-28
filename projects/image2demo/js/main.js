@@ -386,6 +386,11 @@
       const outputCol = cols[2];
 
       const update = () => {
+        // On mobile layout, let prompt grow naturally
+        if (window.innerWidth <= 768) {
+          promptCol.style.height = '';
+          return;
+        }
         const imgH = Math.max(inputCol.offsetHeight, outputCol.offsetHeight);
         // Only constrain once images have loaded (column taller than just the label)
         if (imgH < 160) {
@@ -453,6 +458,30 @@
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
   }
+
+  // ── Back to top ───────────────────────────
+  (function () {
+    const btn = document.createElement('button');
+    btn.className = 'back-to-top';
+    btn.setAttribute('aria-label', 'Back to top');
+    btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+      viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>`;
+    document.body.appendChild(btn);
+
+    function toggleBtn() {
+      btn.classList.toggle('visible', window.scrollY > 400);
+    }
+
+    window.addEventListener('scroll', toggleBtn, { passive: true });
+    toggleBtn();
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  })();
 
   // ── Init ──────────────────────────────────
   render();

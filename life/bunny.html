@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vicki Lin 與兔兔的世界，Yuki、大久野島、愛兔協會褓母，和那些有兔兔在的日子。"
+    />
+    <title>兔兔 · Vicki Lin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+TC:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/life.css" />
+    <link rel="stylesheet" href="../assets/css/bunny.css" />
+  </head>
+  <body>
+    <nav class="nav" id="nav" role="navigation">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">Vicki Lin</a>
+        <button
+          class="nav__burger"
+          id="navBurger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span aria-hidden="true"></span><span aria-hidden="true"></span
+          ><span aria-hidden="true"></span>
+        </button>
+        <ul class="nav__links" id="navLinks" role="list">
+          <li><a href="/" class="nav__link">Home</a></li>
+          <li><a href="/#about" class="nav__link">About</a></li>
+          <li><a href="/#resume" class="nav__link">Resume</a></li>
+          <li><a href="/#portfolio" class="nav__link">Portfolio</a></li>
+          <li><a href="/#life" class="nav__link">Life</a></li>
+          <li><a href="/#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <div class="page-hero__text">
+          <nav class="page-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Vicki Lin</a>
+            <span class="page-breadcrumb__sep">/</span>
+            <a href="/#life">Life</a>
+            <span class="page-breadcrumb__sep">/</span>
+            <span aria-current="page">兔兔</span>
+          </nav>
+          <span class="page-hero__eyebrow">Bunny World</span>
+          <h1 class="page-hero__title">兔兔 · <em>毛孩子</em></h1>
+          <p class="page-hero__sub">牠們不說話，但你就是覺得有牠在，很好。</p>
+        </div>
+        <div class="page-hero__img-wrap" aria-hidden="true">
+          <img
+            src="../assets/images/life-rabbit.jpg"
+            alt="Vicki feeding rabbits at a rabbit island in Japan"
+            class="page-hero__img"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Life sub-navigation -->
+    <nav class="life-subnav" aria-label="Life 其他頁面">
+      <div class="life-subnav__inner">
+        <a href="/life/snowboarding.html" class="life-subnav__link">滑雪</a>
+        <a href="/life/hiking.html" class="life-subnav__link">登山</a>
+        <a href="/life/diving.html" class="life-subnav__link">潛水</a>
+        <a href="/life/tennis.html" class="life-subnav__link">網球</a>
+        <a href="/life/baking.html" class="life-subnav__link">料理</a>
+        <a href="/life/cocktails.html" class="life-subnav__link">微醺</a>
+        <a href="/life/bunny.html" class="life-subnav__link life-subnav__link--active">兔兔</a>
+      </div>
+    </nav>
+    <main class="section section--surface">
+      <div class="container">
+        <!-- Yuki highlight card -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">Yuki</h2>
+            <span class="record-badge record-badge--rose">我的小毛球</span>
+          </div>
+
+          <!-- Yuki portrait + stats -->
+          <div class="yuki-profile reveal">
+            <div class="yuki-profile__photo">
+              <img
+                src="../assets/images/yuki-portrait.jpg"
+                alt="Yuki，棕灰色的道奇兔，在院子裡"
+                loading="lazy"
+              />
+            </div>
+            <div class="yuki-profile__info">
+              <p class="yuki-profile__intro">
+                她是道奇兔，棕灰色，眼睛炯炯有神，有著迷人的眼線，有點傲嬌，有點黏人，九年的陪伴。
+                她不說話，但存在感很強。每天回家看到她，煩惱瞬間不翼而飛。
+              </p>
+              <div class="yuki-stats">
+                <div class="yuki-stat">
+                  <div class="yuki-stat__label">品種</div>
+                  <div class="yuki-stat__value">道奇兔</div>
+                </div>
+                <div class="yuki-stat">
+                  <div class="yuki-stat__label">生日</div>
+                  <div class="yuki-stat__value">2013 / 08 / 22</div>
+                </div>
+                <div class="yuki-stat">
+                  <div class="yuki-stat__label">加入家庭</div>
+                  <div class="yuki-stat__value">2013 / 10 / 07</div>
+                </div>
+                <div class="yuki-stat">
+                  <div class="yuki-stat__label">離開</div>
+                  <div class="yuki-stat__value">2022 / 11 / 23</div>
+                </div>
+                <div class="yuki-stat">
+                  <div class="yuki-stat__label">陪伴時光</div>
+                  <div class="yuki-stat__value">約 9 年</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Life Story -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">Yuki 的一生</h2>
+            <span class="record-badge record-badge--rose">三千多個日子</span>
+          </div>
+
+          <div class="chapter-list">
+            <!-- Chapter 1: 緣分 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2013 · 10</div>
+                <div class="chapter__title">寵物店的相遇</div>
+                <div class="chapter__body">
+                  <p>
+                    大學畢業那年，有段時間常去逛公館的寶羅寵物店（現址為辛殿麻辣鍋），看過好幾批小兔子進到寵物店又離開，當時想著兔子是很棒的寵物選擇，做了一些功課後，了解到兔子也是可以有互動的、可以訓練的、壽命大約十年，儘管對未來十年極度茫然，仍下定決心要陪伴一個小生命的一生。
+                  </p>
+                  <p>
+                    還記得那次是一批三隻小兔子，過了幾天再去看只剩下一隻，當時寵物兔還不太常見，大家對於兔子的觀念有很大的錯誤，比方說要吃紅蘿蔔、不能喝水、很臭等等，兔子的生命對商人來說似乎也沒什麼價值，我買了兔籠店家就說那送我兔子吧，種種緣分讓妳成為我生命中很重要的一部分，Yuki
+                    寶貝。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">加入家庭</span>
+                  <span class="tag tag--peach">公館寶羅</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 2: 成為家人 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2013 · 10 · 07</div>
+                <div class="chapter__title">成為我的家人</div>
+                <div class="chapter__body">
+                  <p>
+                    2013/10/07，Yuki 成為了我的家人，當時約一個半月大，我當起自家的戶政事務所將 Yuki
+                    的出生日期訂在
+                    8/22，和我月份相同日期雙倍的日子，是隻棕灰色的道奇兔，右耳是棕灰色左耳是白色，有著一雙灰色的眼睛。
+                  </p>
+                  <p>
+                    當時 Yuki
+                    才一個手掌大，可以窩在飼料碗，也可以平躺在便盆，是應當還需要喝母奶長大的階段。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">道奇兔</span>
+                  <span class="tag tag--peach">一個手掌大</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 3: 疥癬 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2013 · 10</div>
+                <div class="chapter__title">剛來就生病</div>
+                <div class="chapter__body">
+                  <p>
+                    沒過幾天發現 Yuki
+                    的額頭開始脫毛，去了古亭動物醫院看醫生，認識了吳醫師，醫師說是疥癬，寵物店很常見的傳染病，需要打幾次針，看
+                    Yuki 被打針時都沒有反抗也沒有不開心，覺得這小不點真勇敢；也在這時候確定了 Yuki
+                    是女孩，另外醫師也特別交代幼兔要注意保暖，於是買了保溫燈。
+                  </p>
+                  <p>
+                    有次看到 Yuki
+                    的鬍鬚卷卷的，應該是太靠近保溫燈有點燒焦了，後來保溫燈只用了這一個冬天。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">古亭動物醫院</span>
+                  <span class="tag tag--peach">疥癬</span>
+                  <span class="tag tag--mint">痊癒</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 4: Tuki -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2014 · 春節</div>
+                <div class="chapter__title">Tuki，一見鍾情</div>
+                <div class="chapter__body">
+                  <p>
+                    2014 年農曆春節，有位香港人學妹因為要返家，需要找兔子寄宿，讓 Yuki
+                    認識了大兩歲同是道奇的哥哥 Tuki，很驚喜地，兩隻兔子一見鍾情，相處得好甜蜜，Yuki
+                    也向 Tuki 學習怎麼使用便盆，也學了女孩不該學的動作，不過 Tuki 當時已經結紮。
+                  </p>
+                  <p>
+                    感情雖好但一起放風時第一件事是跑去對方的籠子吃東西，真不愧是兩歲智商的兔子，就像小朋友總會覺得人家的東西比較好，事實上完全一樣呀！
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">Tuki</span>
+                  <span class="tag tag--peach">小倆口</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 5: 結紮 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2014 · 06 · 09</div>
+                <div class="chapter__title">絕育手術那天</div>
+                <div class="chapter__body">
+                  <p>
+                    2014/06/09，Yuki 到了可以結紮的年紀和體重，跟著吳醫師到了長宏動物醫院，讓 Yuki
+                    絕育了。印象中只花了不到四千元，幸好 Yuki
+                    沒有因此恨我，只是每天餵藥都跑給我追，還不斷想把頭套拆下來，辛苦她了。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">手術</span>
+                  <span class="tag tag--mint">平安</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 6: 兔島 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2014 · 暑假</div>
+                <div class="chapter__title">兔島之旅，第一次寄宿</div>
+                <div class="chapter__body">
+                  <p>
+                    暑假時去了趟日本旅行，也包括了位在瀨戶內海的兔島，要不是當了兔奴可能也不會想到要去兔島吧；當時在網路上幫不能一起出國的
+                    Yuki 找了寄宿，認識了 Ki 醬麻，Ki 醬麻天天幫 Yuki
+                    準備蔬果大餐，還有大理石可以躺，後來接 Yuki
+                    回來還對我生悶氣好幾天，我也買了塊大理石補償她。說不定 Yuki 現在也認識了 Ki
+                    醬唷！
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--sky">瀨戶內海</span>
+                  <span class="tag tag--mint">第一次寄宿</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 7: 宿舍偷渡 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2014 · 下半年</div>
+                <div class="chapter__title">宿舍偷渡、Tuki 重逢</div>
+                <div class="chapter__body">
+                  <p>
+                    下半年時排到了教職員工宿舍，讓 Yuki 當了偷渡寵物，幸好 Yuki
+                    已經學會了在便盆上廁所，可以很輕鬆地維持房間整潔。也在這時候第二次讓 Tuki
+                    來寄宿，相隔一年才又見面的小倆口，感情一樣濃密，時常互相依偎緊靠著彼此。
+                  </p>
+                  <p>
+                    Tuki 麻畢業後帶著 Tuki 搭飛機回了香港，小倆口就再也沒見面了。謝謝 Tuki
+                    麻當年如此信任我。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">Tuki 再度來訪</span>
+                  <span class="tag tag--peach">宿舍偷渡</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 8: 放養日常 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">日常</div>
+                <div class="chapter__title">完全放養的小霸王</div>
+                <div class="chapter__body">
+                  <p>
+                    年中時換了工作，也在公司附近找了新住處，是間舊公寓隔出來的邊間套房，有一小部分是原本的小陽台外推出來的，就這麼剛好適合擺兔籠佈置
+                    Yuki 的家；也是在這裡開始只要我在家時就完全放養，每天早上 Yuki
+                    會踩我叫我起床餵她吃早餐。
+                  </p>
+                  <p>
+                    咬東西是兔子的天性，幾年下來 Yuki
+                    咬斷過無數條電線和網路線，而且還常常專挑蘋果的，我的技能樹點了些接電線，但壓網路線終究沒能學會；衣服、床單、包包、鞋帶、夾腳拖、地毯、書，
+                    什麼東西都有 Yuki
+                    的咬痕，有幾次我在床上滑手機疏忽了她，毫不客氣地直接在螢幕保護貼上留下齒痕；差點忘了小時候的
+                    Yuki 會吃我的頭髮！幸好長大就沒這個嗜好了，不然我可能要長年戴著帽子睡覺。
+                  </p>
+                  <p>
+                    如果回家時間晚了，Yuki
+                    會站在一個可以望著門口的地方癡癡地等我進門，然後跑過來迎接我；Yuki
+                    總是可以給我抱著，跟她說「親一個」她就會舔舔我的鼻子，手伸過去就會預備好摸頭姿勢，冬天時還願意讓我把雙腳放在她身體下，完全是優質暖暖包。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">放養</span>
+                  <span class="tag tag--peach">咬電線</span>
+                  <span class="tag tag--butter">暖暖包</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 9: 愛兔協會 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">愛兔協會</div>
+                <div class="chapter__title">志工、短跑選手、出道當明星</div>
+                <div class="chapter__body">
+                  <p>
+                    後來才開始認識愛兔協會，Yuki
+                    在愛兔假期度假過很多次，可以在出遊時透過網路攝影機的即時畫面看看 Yuki
+                    很令人放心；這幾年去當過幾次志工，在愛兔協會有高雄據點後也開過幾次愛兔順風車，最開心的是寵物展能帶
+                    Yuki 去愛兔協會的攤位玩耍和參加短跑比賽，身為選手的 Yuki 好失控呀！
+                  </p>
+                  <p>
+                    喜歡煮飯的我，每次買蔬菜時總會選擇 Yuki 也能吃的菜，每次吃水果時也總會分 Yuki
+                    吃一口，兔子能吃什麼不能吃什麼漸漸在我腦中形成一本字典，還會針對 Yuki
+                    的喜好加上標籤。幫 Yuki
+                    想菜單成了一大樂趣，也試著自己種小麥草、薄荷，也喜歡買些點心和玩具，甚至還跟她玩遊戲，應該也給
+                    Yuki 帶來多采多姿的生活吧。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">愛兔協會</span>
+                  <span class="tag tag--mint">志工</span>
+                  <span class="tag tag--peach">短跑比賽</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 10: 環島 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2018</div>
+                <div class="chapter__title">環島壽卡，Yuki 唯一一次住飯店</div>
+                <div class="chapter__body">
+                  <p>
+                    2018 年單車環島時，我爸開車載 Yuki 從高雄到台東，也因此能和 Yuki
+                    在南迴公路的壽卡鐵馬驛站合影，也是 Yuki 唯一一次住飯店的難得體驗。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--sky">單車環島</span>
+                  <span class="tag tag--mint">壽卡</span>
+                  <span class="tag tag--peach">唯一一次住飯店</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 11: 北漂 + 回高雄 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2019</div>
+                <div class="chapter__title">北漂五次，回高雄養老</div>
+                <div class="chapter__body">
+                  <p>
+                    在台北搬過五次家、住過五個行政區，Yuki
+                    也陪我度過這麼多次的遷居，也跟著我多次搭高鐵往返北高，不過身為兔子應該不在意住址門牌，只求一個字：大！於是在
+                    2019 年一次出國旅行前帶 Yuki 回高雄，決定讓 Yuki 長時間住在大房子享福。
+                  </p>
+                  <p>
+                    後來只有一次和我一起回台北跟我窩在小套房短暫時間，也讓 Yuki
+                    可能有點討厭我這媽媽，每次見到我就是剪指甲、梳毛、甚至看醫生，準沒好事！有次回高雄一踏進家門，Yuki
+                    朝我跑來，沒跑幾步就煞車，然後轉身離去，Yuki
+                    應該是在想：「是馬麻耶好開心～～啊啊但我不想剪指甲！」
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">台北搬家 &times;5</span>
+                  <span class="tag tag--peach">高雄養老</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 12: 月曆 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2020</div>
+                <div class="chapter__title">登上月曆，我家兔子出道了</div>
+                <div class="chapter__body">
+                  <p>2020 年，Yuki 登上了愛兔協會的月曆，從此我家中的月曆停留在 2020 年 9 月。</p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">2020 年曆</span>
+                  <span class="tag tag--butter">2020 · 09</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 13: 疫情 + 動物醫院驚嚇 -->
+            <div class="chapter reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2021</div>
+                <div class="chapter__title">疫情居家，那個不安的夏天</div>
+                <div class="chapter__body">
+                  <p>
+                    2021 年 5 月，因為疫情而公司宣佈開始居家辦公，我也回到了高雄和家人還有 Yuki
+                    一起生活；在這期間發現 Yuki 的排便不太好，擔心是健康已經亮了紅燈，於是在
+                    2021/07/28 帶 Yuki 去了評價非常好且離家近的兔科專門動物醫院。
+                  </p>
+                  <p>
+                    經過一連串的診察與治療，應該有超過半小時，當時我確實很感謝醫師的耐心，能感受到醫師對於小動物的愛；殊不知這是惡夢的開始，回到家發現
+                    Yuki
+                    仍處在非常驚嚇情緒，不吃不喝也不趴下來睡覺，養兔子的人應該都知道，兔子不吃不喝幾小時就非常危險，我完全嚇壞了。我無法責怪醫師，而身為飼主我當下也沒有拒絕診療，面對
+                    Yuki 是滿滿的心疼和懊惱。
+                  </p>
+                  <p>
+                    經過幾天的灌食，接著一根草一根草餵，Yuki
+                    總算願意自己吃吃喝喝。後來為了返回辦公室上班回到台北，我讓 Yuki
+                    留在高雄給我媽照顧。半年下來，Yuki
+                    的個性全變了、習慣的休息地點換了、喜歡的零食也不同了，聽到搖飼料的聲音再也不會跑過來了。但其他方面都有好轉，仍然是隻可愛又精明的兔寶。
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--rose">疫情</span>
+                  <span class="tag tag--peach">灌食</span>
+                  <span class="tag tag--mint">康復</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chapter 14: 離開 -->
+            <div class="chapter chapter--future chapter--final reveal">
+              <div class="chapter__timeline">
+                <div class="chapter__dot"></div>
+                <div class="chapter__line"></div>
+              </div>
+              <div class="chapter__content">
+                <div class="chapter__label">2022 · 11 · 23</div>
+                <div class="chapter__title">最後的時光</div>
+                <div class="chapter__body">
+                  <p>
+                    一開始就知道十歲是寵物兔生理構造上的年齡界限，但已步入高齡的 Yuki
+                    還是很有精神，且曾經做過會引起歪頭症的兔腦炎微孢子蟲檢查也是陰性，也自認為是還算盡責的兔奴，再加上聽說過不少超過十五歲的兔瑞，讓我不太願意去思考要怎麼面對
+                    Yuki 的生命終點。
+                  </p>
+                  <p>
+                    就這樣 Yuki 在高雄過著養老生活，2022/10/10
+                    國慶連假回高雄還有見到她可愛的模樣，卻也是最後一面。
+                  </p>
+                  <p>
+                    2022/11/23 星期三清晨，Yuki
+                    在我媽的懷裡去當小天使了。而我是在週末回高雄投票才得知，看到空蕩蕩的籠子，有著無法言喻的失落。回想星期三下午我還難得傳
+                    LINE 問我媽 Yuki
+                    好嗎，得到回覆說不太好，我也沒再追問，晚上我還哭著在查寵物後事的資訊，還有能做怎麼樣的紀念，也許冥冥之中感受到
+                    Yuki 和我道別吧。
+                  </p>
+                  <p>
+                    如果說有沒有已經來不及才在後悔的事，肯定是有的，我從沒拍到過 Yuki
+                    打哈欠、側身倒下休息、跳兔子舞的模樣，我曾經想要寫 Yuki
+                    日記但只寫了幾天就放棄，我好想和 Yuki 去拍寵物攝影，我期待著可以讓 Yuki
+                    當孩子的大姊姊，我甚至沒有見到最後一面⋯
+                  </p>
+                  <p>
+                    最後安葬在老家的院子，旁邊種了一排排的蔬菜和一整片的檸檬樹，希望 Yuki
+                    能在蔬菜果園開心地跑跑、跳兔子舞！
+                  </p>
+                </div>
+                <div class="chapter__tags">
+                  <span class="tag tag--muted">2022 · 11 · 23</span>
+                  <span class="tag tag--muted">檸檬樹旁</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory Box -->
+          <div class="memory-box reveal">
+            <div class="memory-box__title">三千多個日子</div>
+            <div class="memory-box__body">
+              踩媽媽、親一個、縮成暖暖包、咬電線被罵、跑短跑剎不住、在新家每個角落聞一遍。她不會說話，但她在的每一天都有它的樣子，現在想起來，每一個畫面都很清晰。
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo grid -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">相片集</h2>
+            <span class="record-badge record-badge--rose">Yuki 的日子</span>
+          </div>
+          <div class="photo-grid photo-grid--3 reveal">
+            <div class="photo-placeholder photo-placeholder--filled">
+              <img src="../assets/images/yuki-portrait.jpg" alt="Yuki 在院子裡" loading="lazy" />
+              <span>Yuki</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+              <span>暖暖包模式</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+              <span>Tuki 小倆口</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+              <span>大久野島</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+              <span>2020 年曆</span>
+            </div>
+            <div class="photo-placeholder">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                />
+                <circle cx="12" cy="13" r="3" />
+              </svg>
+              <span>老家的日子</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- 大久野島 travel section -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">大久野島之旅</h2>
+            <span class="record-badge record-badge--rose">日本 · 廣島縣</span>
+          </div>
+          <div class="travel-card reveal">
+            <div class="travel-card__title">兔子的島</div>
+            <div class="travel-card__body">
+              <p>
+                廣島縣有一座島叫大久野島，又叫兔子島。島上住了幾百隻放養的野兔，你走到哪裡，牠們就跟到哪裡。帶了一大袋紅蘿蔔和牧草，就出發了。
+              </p>
+              <p>
+                那天整個人被兔兔圍繞著，快樂是真的快樂，但也說不上來為什麼有一點想念的感覺。後來回想，大概就是那種距離感吧，在場的兔兔都好親人，但你心裡掛著的那隻不在這裡。
+              </p>
+            </div>
+            <div class="photo-grid reveal">
+              <div class="photo-placeholder photo-placeholder--filled">
+                <img
+                  src="../assets/images/yuki-okunoshima.jpg"
+                  alt="Vicki 在大久野島餵兔兔"
+                  loading="lazy"
+                />
+                <span>兔兔島之旅</span>
+              </div>
+              <div class="photo-placeholder">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                  />
+                  <circle cx="12" cy="13" r="3" />
+                </svg>
+                <span>島上的兔兔們</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- 褓母日記 -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">褓母日記</h2>
+            <span class="record-badge record-badge--rose">愛兔協會 · 短期褓母</span>
+          </div>
+          <p class="record-section__intro reveal">
+            加入台灣愛兔協會，擔任短期褓母志工，接待需要暫時照顧的兔兔們，陪牠們等待新家。每一隻來家裡住過的都不一樣，但每一隻都讓人更深刻理解了什麼叫「以兔為家」。
+          </p>
+          <div class="foster-grid reveal">
+            <!-- 龜甲萬 -->
+            <div class="foster-card">
+              <div class="foster-card__photo">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"
+                  />
+                  <circle cx="12" cy="13" r="3" />
+                </svg>
+                <span>照片待補</span>
+              </div>
+              <div class="foster-card__body">
+                <div class="foster-card__name">龜甲萬</div>
+                <div class="foster-card__dates">
+                  褓母期間：2025 / 11 / 08 &ndash; 2026 / 01 / 08
+                </div>
+                <a
+                  class="foster-card__link"
+                  href="https://www.loverabbit.org/products_detail/1502"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                  </svg>
+                  台灣愛兔協會 · 龜甲萬的頁面
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Farewell -->
+        <div class="farewell reveal">
+          <svg
+            class="farewell__heart"
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="36"
+            viewBox="0 0 24 24"
+            fill="var(--rose)"
+            fill-opacity="0.5"
+            stroke="none"
+          >
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+            />
+          </svg>
+          <p class="farewell__name">Yuki</p>
+          <p class="farewell__dates">2013 · 08 · 22 &nbsp;&ndash;&nbsp; 2022 · 11 · 23</p>
+          <p class="farewell__quote">
+            她不說話，但存在感很強。<br />
+            每天回家看到她，莫名就覺得沒什麼好煩的。<br />
+            這種安靜的陪伴，是很珍貴的禮物。
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p class="footer__quote">you were here, and that was everything.</p>
+        <p class="footer__copy">© Vicki Lin · <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

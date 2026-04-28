@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vicki Lin 的微醺時光，和那些剛好的夜晚。"
+    />
+    <title>微醺時光 · Vicki Lin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Noto+Serif+TC:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/life.css" />
+    <link rel="stylesheet" href="../assets/css/cocktails.css" />
+  </head>
+  <body>
+    <nav class="nav" id="nav" role="navigation">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">Vicki Lin</a>
+        <button
+          class="nav__burger"
+          id="navBurger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span aria-hidden="true"></span><span aria-hidden="true"></span
+          ><span aria-hidden="true"></span>
+        </button>
+        <ul class="nav__links" id="navLinks" role="list">
+          <li><a href="/" class="nav__link">Home</a></li>
+          <li><a href="/#about" class="nav__link">About</a></li>
+          <li><a href="/#resume" class="nav__link">Resume</a></li>
+          <li><a href="/#portfolio" class="nav__link">Portfolio</a></li>
+          <li><a href="/#life" class="nav__link">Life</a></li>
+          <li><a href="/#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <div class="page-hero__text">
+          <nav class="page-breadcrumb" aria-label="Breadcrumb">
+            <a href="/">Vicki Lin</a>
+            <span class="page-breadcrumb__sep">/</span>
+            <a href="/#life">Life</a>
+            <span class="page-breadcrumb__sep">/</span>
+            <span aria-current="page">微醺時光</span>
+          </nav>
+          <span class="page-hero__eyebrow">Cocktail Diaries</span>
+          <h1 class="page-hero__title">微醺 · <em>時光</em></h1>
+          <p class="page-hero__sub">微醺的夜晚，對話會比較誠實一點。我喜歡這樣的夜晚。</p>
+        </div>
+        <div class="page-hero__img-wrap" aria-hidden="true">
+          <img
+            src="../assets/images/life-alcohol.jpg"
+            alt="Vicki with a beautifully crafted cocktail"
+            class="page-hero__img"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Life sub-navigation -->
+    <nav class="life-subnav" aria-label="Life 其他頁面">
+      <div class="life-subnav__inner">
+        <a href="/life/snowboarding.html" class="life-subnav__link">滑雪</a>
+        <a href="/life/hiking.html" class="life-subnav__link">登山</a>
+        <a href="/life/diving.html" class="life-subnav__link">潛水</a>
+        <a href="/life/tennis.html" class="life-subnav__link">網球</a>
+        <a href="/life/baking.html" class="life-subnav__link">料理</a>
+        <a href="/life/cocktails.html" class="life-subnav__link life-subnav__link--active">微醺</a>
+        <a href="/life/bunny.html" class="life-subnav__link">兔兔</a>
+      </div>
+    </nav>
+    <main class="section section--surface">
+      <div class="container">
+        <!-- Featured Cocktail: Bee's Knees -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">最愛的調酒</h2>
+            <span class="record-badge record-badge--lavender">My Go-To</span>
+          </div>
+
+          <div class="cocktail-featured reveal">
+            <div>
+              <p class="cocktail-featured__eyebrow">Prohibition-era Classic · 1920s</p>
+              <h2 class="cocktail-featured__name">Bee's Knees</h2>
+              <p class="cocktail-featured__origin">"The best thing" · 1920s American slang</p>
+              <div class="cocktail-featured__ingredients">
+                <span class="ingredient-tag">Gin</span>
+                <span class="ingredient-tag">Fresh Lemon Juice</span>
+                <span class="ingredient-tag">Honey Syrup</span>
+                <span class="ingredient-tag">Lemon Twist ✦</span>
+              </div>
+              <p class="cocktail-featured__desc">
+                清爽、微酸、帶著蜂蜜的柔和甜感，讓 Gin 的草本香氣更立體。
+                沒有過度複雜的層次，剛好是一杯「喝完還想再來一杯」的調酒。 名字來自 1920
+                年代美國俚語，意思是「最棒的事情」。某些夜晚確實如此。
+              </p>
+            </div>
+            <div class="cocktail-featured__glass" aria-hidden="true">
+              <img src="../assets/images/cocktail-bees-knees.jpg" alt="Bee's Knees cocktail" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Bar Spotlight: U Square -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">最喜歡的餐酒館</h2>
+            <span class="record-badge record-badge--lavender">Favorite Spot</span>
+          </div>
+
+          <div class="bar-spotlight reveal">
+            <div>
+              <p class="bar-spotlight__eyebrow">台北市大安區</p>
+              <h3 class="bar-spotlight__name">U Square by A Train</h3>
+              <p class="bar-spotlight__location">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="13"
+                  height="13"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--muted)"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                光復南路 578 號 · 捷運信義安和站步行約 8 分鐘
+              </p>
+              <p class="bar-spotlight__desc">
+                A Train
+                字母酒吧系列的第一家一樓店。外觀低調，鐵柵欄遮著，走過去不一定發現得到；推門進去卻是霓虹燈打底的開闊空間，方方正正，吧台、包廂、卡座各就各位，名字
+                U Square 就是這個廣場感。
+                菜單上的調酒都有字母代號，每款搭一句冷笑話標語，第一次看忍不住笑出來。調酒師各個都很帥，服務也不過分熱情，那種剛好的距離感，讓人可以放鬆，也讓對話更自然。
+                去了幾次，每次都覺得剛好。
+              </p>
+              <div class="bar-spotlight__vibe">
+                <span class="tag">字母酒吧</span>
+                <span class="tag">信義區</span>
+                <span class="tag">一樓酒吧</span>
+                <span class="tag">精緻調酒</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider"></div>
+
+        <!-- Diary placeholder -->
+        <div class="record-section">
+          <div class="record-section__header reveal">
+            <h2 class="record-section__title">微醺日誌</h2>
+            <span class="record-badge record-badge--lavender">陸續補充</span>
+          </div>
+          <div class="cocktail-placeholder reveal">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="var(--lavender)"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M8 22h8" />
+              <path d="M12 11v11" />
+              <path d="m19 3-7 8-7-8Z" />
+            </svg>
+            <p class="cocktail-placeholder__title">那些值得記下來的夜晚</p>
+            <p class="cocktail-placeholder__sub">
+              有些酒喝完就忘了，有些你會記得那個杯子、那首歌、那段對話。
+            </p>
+          </div>
+        </div>
+
+        <div class="quote-block reveal">
+          <p>喝酒的學問不在多，在懂。懂自己喜歡什麼味道，懂什麼樣的夜晚適合喝哪一杯。</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <p class="footer__quote">just tipsy enough to be honest.</p>
+        <p class="footer__copy">© Vicki Lin · <span id="year"></span></p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
