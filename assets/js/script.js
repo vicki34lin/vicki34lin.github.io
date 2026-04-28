@@ -147,6 +147,31 @@ if ('IntersectionObserver' in window) {
 }
 
 
+/* ── Back to top button ──────────────────────────────────── */
+(function () {
+  const btn = document.createElement('button');
+  btn.className = 'back-to-top';
+  btn.setAttribute('aria-label', 'Back to top');
+  btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>`;
+  document.body.appendChild(btn);
+
+  function toggleBtn() {
+    btn.classList.toggle('visible', window.scrollY > 400);
+  }
+
+  window.addEventListener('scroll', toggleBtn, { passive: true });
+  toggleBtn();
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+
 /* ── Smooth scroll for anchor links (fallback for older browsers) ── */
 // Modern browsers handle this via CSS `scroll-behavior: smooth`,
 // but this ensures consistent behaviour in older environments.

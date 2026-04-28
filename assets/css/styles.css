@@ -1560,3 +1560,41 @@ button {
 
   .franchise__card { padding: 2.25rem 1.25rem; }
 }
+
+
+/* ── Back to top button ─────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--muted);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.5rem);
+  transition: opacity 0.25s ease, visibility 0.25s ease,
+              transform 0.25s ease, border-color 0.2s ease,
+              color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  border-color: var(--accent-soft);
+  color: var(--accent-dark);
+  box-shadow: var(--shadow);
+}
