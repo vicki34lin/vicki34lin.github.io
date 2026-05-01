@@ -79,6 +79,9 @@
 }
 
 .challenge-peak__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.125rem 0.625rem;
@@ -230,6 +233,182 @@
   opacity: 0.7;
 }
 
+/* ── Tabs ── */
+.hike-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 2.5rem;
+}
+
+.hike-tab-btn {
+  padding: 0.625rem 1.375rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -2px;
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+  white-space: nowrap;
+}
+
+.hike-tab-btn:hover { color: var(--text); }
+
+.hike-tab-btn--active {
+  color: var(--mint-dark);
+  border-bottom-color: var(--mint-dark);
+}
+
+.hike-tab-panel { display: none; }
+.hike-tab-panel--active { display: block; }
+
+/* ── Photo item (actual photo, replaces photo-placeholder) ── */
+.photo-item {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background-color: var(--surface-2);
+  aspect-ratio: 16 / 9;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.photo-item img:hover { transform: scale(1.04); }
+
+/* ── Peak photo cards (百岳) ── */
+.peak-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+  gap: 1.25rem;
+}
+
+.peak-photo-card {
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+
+.peak-photo-card__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.875rem;
+}
+
+.peak-photo-card__name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.peak-photo-card__meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* ── Quick photo grid (小百岳 without journal) ── */
+.peak-quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  gap: 0.875rem;
+}
+
+.peak-quick-card {
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.peak-quick-card .photo-item,
+.peak-quick-card .photo-placeholder {
+  border-radius: 0;
+  aspect-ratio: 3 / 4;
+  width: 100%;
+}
+
+.peak-quick-card__info {
+  padding: 0.625rem 0.875rem 0.75rem;
+}
+
+.peak-quick-card__name {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: var(--text);
+  margin-bottom: 0.125rem;
+}
+
+.peak-quick-card__date {
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+/* ── Lightbox ── */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.lightbox-overlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.lightbox-overlay img {
+  max-width: min(90vw, 56rem);
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.6);
+  transform: scale(0.95);
+  transition: transform 0.25s ease;
+}
+
+.lightbox-overlay.open img {
+  transform: scale(1);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 2.25rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.lightbox-close:hover { color: #fff; }
+
+.photo-item img { cursor: zoom-in; }
+
 /* ── Responsive ── */
 @media (max-width: 600px) {
   .challenge-strip { flex-direction: column; }
@@ -239,4 +418,6 @@
   .overseas-card__dates { display: none; }
   .photo-grid { grid-template-columns: 1fr; }
   .photo-grid--3 { grid-template-columns: 1fr 1fr; }
+  .hike-tab-btn { padding: 0.5rem 0.875rem; font-size: 0.8rem; }
+  .peak-quick-grid { grid-template-columns: 1fr 1fr; }
 }
