@@ -9,3 +9,6 @@
 
 # Claude Code
 .claude/
+
+# Temp files
+/temp/
