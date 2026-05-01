@@ -666,9 +666,48 @@ img {
 }
 
 /* =========================================
+   BACK TO TOP
+   ========================================= */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 900;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-label);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0.5rem);
+  transition: opacity 0.25s ease, visibility 0.25s ease,
+              transform 0.25s ease, border-color 0.2s ease,
+              color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: var(--shadow-md);
+}
+
+/* =========================================
    RESPONSIVE
    ========================================= */
-@media (max-width: 860px) {
+@media (max-width: 768px) {
   .card-body {
     grid-template-columns: 1fr;
   }
@@ -695,6 +734,17 @@ img {
 
   .arrow-icon svg {
     transform: rotate(90deg);
+  }
+
+  /* Prompt: let it grow naturally, no fixed height */
+  .card-col--prompt {
+    overflow: visible;
+  }
+
+  .prompt-scroll-wrap {
+    flex: none;
+    overflow-y: visible;
+    padding-right: 0;
   }
 
   .lightbox-stage {

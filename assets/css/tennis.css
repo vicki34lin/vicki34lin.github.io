@@ -1,0 +1,102 @@
+/* ============================================================
+   VICKI LIN — life/tennis.css
+   Page-specific styles for tennis.html
+   ============================================================ */
+
+:root {
+  --page-glow-a: var(--mint-soft);
+  --page-glow-b: var(--butter-soft);
+  /* Chapter timeline: mint edition */
+  --chapter-color: var(--mint);
+  --chapter-soft: var(--mint-soft);
+  --chapter-label-color: var(--mint-dark);
+}
+
+/* ── Context card ── */
+.context-card {
+  background: linear-gradient(135deg, var(--mint-soft) 0%, var(--butter-soft) 100%);
+  border: 1.5px solid var(--mint);
+  border-radius: var(--radius-lg);
+  padding: 1.875rem 2rem;
+  margin-bottom: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.context-card__main h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.context-card__main h3 em {
+  font-style: italic;
+  color: var(--mint-dark);
+}
+
+.context-card__main p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.context-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+/* ── Meta rows ── */
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.88rem;
+}
+
+.meta-row__icon { font-size: 1rem; flex-shrink: 0; }
+.meta-row__label { color: var(--muted); }
+.meta-row__value { color: var(--text); font-weight: 500; }
+
+/* ── Tournament strip ── */
+.tournament-strip {
+  background-color: var(--cream);
+  border: 1.5px solid var(--border);
+  border-left: 5px solid var(--mint);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  padding: 1.375rem 1.75rem;
+  margin-bottom: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.tournament-strip__info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
+}
+
+.tournament-strip__info p {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ── Chapter size override for tennis (slightly smaller) ── */
+.chapter__title { font-size: 1.2rem; }
+.chapter__body  { font-size: 0.9rem; }
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .context-card { grid-template-columns: 1fr; }
+  .tournament-strip { flex-direction: column; align-items: flex-start; }
+  .chapter { grid-template-columns: 4rem 1fr; }
+}

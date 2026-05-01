@@ -1,64 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GPT-Image-2 玩起來</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPT-Image-2 玩起來</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="header-label">AI Image Generation</div>
+        <h1 class="site-title">GPT-Image-<span class="accent">2</span> 玩起來</h1>
+        <p class="site-subtitle">你給一張圖，AI 給你一個世界</p>
+      </div>
+      <div class="header-divider"></div>
+    </header>
 
-  <header class="site-header">
-    <div class="header-inner">
-      <div class="header-label">AI Image Generation</div>
-      <h1 class="site-title">GPT-Image-<span class="accent">2</span> 玩起來</h1>
-      <p class="site-subtitle">你給一張圖，AI 給你一個世界</p>
+    <main class="gallery" id="gallery">
+      <!-- Cards injected by JS -->
+      <div class="gallery-placeholder">
+        <div class="spinner"></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Image2Demo &copy; 2024</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+      <button class="lightbox-close" id="lightboxClose" aria-label="關閉">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="上一張">
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <polyline points="15 18 9 12 15 6" />
+        </svg>
+      </button>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="下一張">
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+        >
+          <polyline points="9 18 15 12 9 6" />
+        </svg>
+      </button>
+      <div class="lightbox-stage">
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+      </div>
+      <div class="lightbox-info">
+        <span class="lightbox-label" id="lightboxLabel"></span>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+      </div>
     </div>
-    <div class="header-divider"></div>
-  </header>
 
-  <main class="gallery" id="gallery">
-    <!-- Cards injected by JS -->
-    <div class="gallery-placeholder">
-      <div class="spinner"></div>
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <p>Image2Demo &copy; 2024</p>
-  </footer>
-
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
-    <button class="lightbox-close" id="lightboxClose" aria-label="關閉">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-      </svg>
-    </button>
-    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="上一張">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <polyline points="15 18 9 12 15 6"/>
-      </svg>
-    </button>
-    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="下一張">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-        <polyline points="9 18 15 12 9 6"/>
-      </svg>
-    </button>
-    <div class="lightbox-stage">
-      <img class="lightbox-img" id="lightboxImg" src="" alt="">
-    </div>
-    <div class="lightbox-info">
-      <span class="lightbox-label" id="lightboxLabel"></span>
-      <span class="lightbox-counter" id="lightboxCounter"></span>
-    </div>
-  </div>
-
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

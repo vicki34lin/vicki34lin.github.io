@@ -643,6 +643,7 @@ button {
   font-size: 1.05rem;
   color: var(--text-light);
   line-height: 1.85;
+  text-align: justify;
 }
 
 .about__story strong { color: var(--accent); font-weight: 600; }
