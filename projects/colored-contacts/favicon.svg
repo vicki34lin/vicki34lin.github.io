@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Eye outline -->
+  <path d="M2 16 C6 8, 10 5, 16 5 C22 5, 26 8, 30 16 C26 24, 22 27, 16 27 C10 27, 6 24, 2 16 Z"
+    fill="#FAF7F2" stroke="#D4908A" stroke-width="1.5"/>
+  <!-- Iris -->
+  <circle cx="16" cy="16" r="7" fill="#C07870"/>
+  <!-- Pupil -->
+  <circle cx="16" cy="16" r="3.5" fill="#2C2420"/>
+  <!-- Highlight -->
+  <circle cx="13.5" cy="13.5" r="1.5" fill="white" opacity="0.7"/>
+  <!-- Iris rim detail -->
+  <circle cx="16" cy="16" r="7" fill="none" stroke="#A86058" stroke-width="0.5" opacity="0.5"/>
+</svg>
