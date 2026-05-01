@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            #text_container {
+                font-family: arial, "Microsoft JhengHei", "微軟正黑體", PMingLiU, "新細明體";
+                text-align: center;
+                font-size: 100px;
+                color: white;
+				padding-top: 35px;
+				
+            }
+
+            html{
+				background: url('img/Garena_black_board.jpg') no-repeat;
+				min-height: 100%;
+				background-size: 105%;
+				background-position: bottom;
+            }
+
+            body{
+                /* Workaround for some mobile browsers */
+                min-height:100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="text_container">
+            <p id="text" style="padding-left: 10%; padding-right: 10%;"></p>
+            <button id="next" style="color: yellow; font-size: 60px; background: green;">下一題</button>
+        </div>
+    </body>
+    
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        var questions = [
+            '你的星座是？',
+            '你的中文和英文全名是？',
+            '你是哪裡人',
+            '你的智慧型手機品牌型號',
+            '你的 LINE 顯示名稱是？',
+            '你現在養了什麼寵物',
+            '你近三個月最常玩哪款遊戲',
+            '你英雄聯盟最擅長的位置',
+            '你的員編百位數是多少',
+            '今年是你在公司的第幾年？',
+            '新人才藝表演你表演了什麼',
+            '你午餐最常跟誰的團',
+            '你最常玩公司哪款遊戲',
+            '你的競時通顯圖是？',
+            '你上班的交通方式是？',
+            '你覺得隊上誰最會烤肉',
+            '你覺得隊上誰的腳最臭',
+            '你覺得隊上誰的最會吃',
+            '你最滿意自己身體哪個部位',
+            '你覺得你是什麼動物的化身',
+            '如果有來世，你希望當隊上誰的爸媽',
+            '午覺醒來，桌上出現了點心，你覺得是誰隊上放的',
+            '現在正在玩殺手遊戲，你是殺手，你想要殺誰',
+            '隊上其實有名特務間諜，你猜會是誰',
+            '殭屍來襲，你會選隊上的誰一同逃亡'
+        ];
+        // var idx = Math.floor((Math.random() * questions.length));
+        function shuffle(a) {
+            var j, x, i;
+            for (i = a.length; i; i--) {
+                j = Math.floor(Math.random() * i);
+                x = a[i - 1];
+                a[i - 1] = a[j];
+                a[j] = x;
+            }
+            return a;
+        }
+        questions = shuffle(questions);
+        console.log(questions);
+        var idx = 0;
+        $('#text').html(questions[idx]);
+        idx++;
+
+        $('#next').click(function(){
+            $('#text').html(questions[idx]);
+            idx++;
+        })
+    </script>
+
+</html>
